@@ -85,15 +85,6 @@ LD_PRELOAD=./libmymalloc.so ./memory_leak
 | `REPORT_TRAINING_ONLY` | 仅显示指定函数内存泄漏   | `false` |
 | `MAX_LEAKS`           | 最大追踪数量             | 100000  |
 
-### 环境变量
-```bash
-# 启用调试输出
-export MLD_DEBUG=1  # 0=关闭 1=基础信息 2=详细追踪
-
-# 输出到文件
-export MLD_LOG=leaks.log
-```
-
 ## 架构图解 📐
 ```c
 +---------------------+      +---------------------+
